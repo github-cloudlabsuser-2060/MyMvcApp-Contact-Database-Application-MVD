@@ -1,0 +1,139 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background: #000080 url('https://www.transparenttextures.com/patterns/stardust.png');
+  color: #00FF00;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, 'Arial', sans-serif;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Y2K-style marquee header */
+h2, th {
+  color: #FFFF00;
+  background: #993955;
+  padding: 8px;
+  border: 3px double #AE76A6;
+  font-family: 'Impact', 'Arial Black', fantasy, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000, 0 0 10px #fff;
+}
+
+/* Table styling */
+.table {
+  background: #A3C3D9;
+  border: 4px ridge #993955;
+  border-radius: 0;
+  box-shadow: 0 0 20px #AE76A6, 0 0 10px #fff inset;
+}
+
+.table th, .table td {
+  border-bottom: 2px dashed #CCD6EB;
+  padding: 10px;
+  color: #000080;
+  background: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Inputs and buttons */
+input[type="text"], button, input[type="submit"] {
+  padding: 8px 16px;
+  border-radius: 0;
+  border: 3px inset #AE76A6;
+  background: #fff;
+  color: #993955;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1em;
+  margin: 4px 0;
+  box-shadow: 2px 2px 0 #A3C3D9;
+}
+
+/* Primary button */
+button, .btn-primary, input[type="submit"] {
+  background: linear-gradient(90deg, #993955 60%, #AE76A6 100%);
+  color: #FFFF00;
+  border: 3px outset #CCD6EB;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+button:hover, .btn-primary:hover, input[type="submit"]:hover {
+  background: linear-gradient(90deg, #AE76A6 60%, #993955 100%);
+  color: #00FF00;
+}
+
+/* Secondary buttons */
+.btn-secondary {
+  background: #A3C3D9;
+  color: #993955;
+  border: 3px outset #CCD6EB;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.btn-secondary:hover {
+  background: #CCD6EB;
+  color: #993955;
+}
+
+/* Links */
+a {
+  color: #FFFF00;
+  font-weight: bold;
+  text-decoration: underline wavy #AE76A6;
+  background: #993955;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0 #AE76A6;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+a:hover {
+  color: #00FF00;
+  background: #AE76A6;
+  text-decoration: blink;
+}
+
+/* Add some animated GIFs for fun */
+body::after {
+  content: url('https://www.animatedimages.org/data/media/710/animated-computer-image-0012.gif') " " url('https://www.animatedimages.org/data/media/202/animated-star-image-0012.gif');
+  display: block;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Marquee effect for headings */
+h2::before {
+  content: "★ ";
+  animation: blink 1s infinite alternate;
+}
+h2::after {
+  content: " ★";
+  animation: blink 1s infinite alternate-reverse;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0.3; }
+}
+
+nav, .navbar, .navigation, header nav {
+  background: #A3C3D9 !important;
+}
