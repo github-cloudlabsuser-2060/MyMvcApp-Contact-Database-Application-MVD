@@ -22,4 +22,4 @@ This here be a web application fer keepin’ track o’ yer contacts, built with
 
 Spotted a bug or got an idea? Raise yer anchor and open an issue or pull request!
 
-Fair winds and happy codin’, ye salty dog!
+Fair winds and happy codin’, ye salty dog! 
