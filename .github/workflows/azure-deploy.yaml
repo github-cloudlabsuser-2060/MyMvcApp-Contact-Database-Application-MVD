@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  AZURE_WEBAPP_NAME: my-mvc-app                # must match webAppName in your ARM template
+  AZURE_WEBAPP_NAME: maureens-mvc-contact-app              # must match webAppName in your ARM template
   AZURE_RESOURCE_GROUP: Github-Copilot-Challenges    # replace with your resource group name
   AZURE_REGION: eastus                         # or your preferred region
 

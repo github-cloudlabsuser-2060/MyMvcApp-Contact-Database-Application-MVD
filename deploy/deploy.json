@@ -8,7 +8,7 @@
     },
     "webAppName": {
       "type": "string",
-      "defaultValue": "my-mvc-app"
+      "defaultValue": "maureens-mvc-contact-app"
     },
     "location": {
       "type": "string",
