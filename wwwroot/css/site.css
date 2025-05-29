@@ -133,3 +133,7 @@ h2::after {
   from { opacity: 1; }
   to { opacity: 0.3; }
 }
+
+nav, .navbar, .navigation, header nav {
+  background: #A3C3D9 !important;
+}
